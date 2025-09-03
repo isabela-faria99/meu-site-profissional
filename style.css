@@ -1,0 +1,356 @@
+/* Define estilos para o corpo da página */
+body{
+	margin: 0; /* Remove margem padrão do navegador */
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define fonte */
+	background-color: #f9f9f9; /* Cor de fundo clara */
+	color: #333; /* Cor do texto */
+}
+
+/* Estiliza o cabeçalho */
+header {
+	background-color: #0d47a1; /* Azul escuro */
+	color: white; /* Texto branco */
+	padding: 20px; /* Espaçamento interno */
+	text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do meu de navegação */
+nav ul {
+	list-style: none; /* Remove os mercadores de lista */
+	padding: 0;
+	margin-top: 10px
+}
+
+nav ul li {
+	display: inline; /* Coloca os itens lado a lado */
+	margin: 0 15px; /* Espaçamento horizontal */
+}
+
+nav ul li a {
+	color: white; /* Cor dos links */
+	text-decoration: none; /* Remove sublinhado */
+	font-weight: bold;
+}
+
+/* Estiliza a seção principal */
+.home-section {
+	padding: 60px 20px;
+	text-aling: center;
+	background-color: #e3f2fd; /* tom azul claro */
+}
+
+.home-section h2 {
+	font-size: 32px
+	margin-bottom: 20px;
+}
+
+.home-section p {
+	font-size: 18px
+	max-width: 600px;
+	margin: 0 auto 30px;
+	line-height: 1.5;
+}
+
+/* Estiliza o botão */
+.cta-button {
+	display: inline-block;
+	padding: 12px 25px;
+	background-color: #1976d2; /* Azul médio */
+	color: white;
+	border: none;
+	font-weight: bold;
+	border-radius: 5px; /* Cantos arredondados */
+	transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+	background-color: #0d47a1; /* Azul mais escuro no hover */
+}
+
+/* Outras seções */
+section {
+	padding: 40px 20px;
+	text-aling: center;
+}
+
+section h2 {
+	color: #1976d2;
+}
+
+/* Seção Sobre Mim */
+.sobre-section {
+	backgroud-color: #ffffff;
+	padding: 60px 20px;
+}
+
+.sobre-container {
+	display: flex;
+	flex-direction: column; /* Móvel: empilha os itens */
+	align-items: center;
+	max-width: 900px;
+	margin: 0 auto;
+	gap: 30px;
+}
+
+/* Em telas maiores, imagem e texto lado a lado */
+@media (min-width: 768px) {
+	.sobre-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+/* Estilo da imagem */
+	.foto-sobre {
+		width: 300px;
+		height: 330px;
+		border-radius: 15px;
+		object-fit: cover;
+		box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Estilo do texto */
+.sobre-texto {
+	max-width: 500px;
+	text-align: letf;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #444;
+}
+
+/* Seção de serviços */
+.servicos-section {
+	background-color: #f0f8ff;
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.servicos-container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/* Para telas maiores, exibe os serviços lado a lado */
+@media (min-width: 768px) {
+	.servicos-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+/* Cartão individual de serviço */
+.servico-card {
+	background-color: white;
+	border-radius: 12px;
+	padding: 25px;
+	box-shadow: 0 4px 12px rgbs(0,0,0,0.1);
+	flex: 1;
+}
+
+/* Título dos serviços */
+.servico-card h3 {
+	color: #1976d2;
+	margin-bottom: 10px;
+}
+
+/* Botão de ação nos serviços */
+.btn-servico {
+	display: inline-block;
+	margin-top: 15px;
+	padding: 10px 20px;
+	background-color: #1976d2;
+	color: white;
+	text-decoration: none;
+	border-radius: 8px;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+}
+
+.btn-servico:hover {
+	background-color: #0d47a1;
+}
+
+/* Seção de Depoimentos */
+.depoimentos-section {
+	maring-top: 60px;
+	padding: 40px 20px;
+	background-color:ffffff;
+	border-top: 1px solid #ddd;
+}
+
+.depoimentos-section h3 {
+	font-size: 24px;
+	color: #1976d2;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.depoimentos-container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	max-width: 1000px;
+	margin: 0 auto;
+	align-items: center;
+}
+
+/* Lado a lado em telas maiores */
+@media (min0width: 768px) {
+	.depoimentos-container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+/* Cartão de depoimento */
+.depoimento-card {
+	background-color: #f9f9f9;
+	border-radius: 12px;
+	paddong: 20px;
+	text-align: center;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+	width: 280px;
+}
+
+.depoimento-card img {
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+
+.depoimento-texto {
+	font-style: italic;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+.depoimento-nome {
+	font-weight: bold;
+	margin-bottom: 3px;
+}
+
+.depoimento-cargo {
+	font-size: 13px;
+	color: #555;
+}
+
+/* Seção de portifólio */
+.portifolio-section {
+	margin-top: 60px;
+	padding: 40px 20px;
+	background-color: #fff;
+	text-aling: center;
+}
+
+.portifolio-section p {
+	font-size: 16px;
+	color: #444;
+	margin-bottom: 30px;
+}
+
+/* Galeria de imagens */
+.galeria-container {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	align-items: center;
+}
+
+/* Em telas maiores, organizar lado a lado */
+@media (min-width: 768px) {
+	.galeria-container {
+		flex-direction: row;;
+		jutify-content: space-between;
+	}
+}
+
+.galeria-item {
+	max-width: 300px;
+}
+
+.galeria-item img {
+	width: 100%;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.legenda-galeria {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #555;
+}
+
+#blog {
+	padding: 60px 20px;
+	background-color: #fff8f0;
+}
+
+#blog h2 {
+	font-size: 2rem;
+	color: #333;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#blog .intro {
+	text-align: center;
+	color: #666;
+	font-size: 1rem;
+	margin-bottom: 30px;
+}
+
+.blog-posts {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.post {
+	background-color: #fff;
+	border-left: 5px solid #ff914d;
+	padding: 20px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+	transition: transform 0.2s;
+}
+
+.post:hover {
+	transform: translateY(-4px);
+}
+
+.post h3 {
+	font-size: 1.3rem;
+	color: #222;
+	margin-bottom: 8px;
+}
+
+.post-info {
+	font-size: 0.9rem;
+	color: #999;
+	margin-bottom: 10px;
+}
+
+.post-resumo {
+	font-size: 1rem;
+	color: #444;
+	margin-bottom: 12px;
+}
+
+.post .botao {
+	background-color: #ff914d;
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.post .botao:hover {
+	background-color: #e57733;
+}
